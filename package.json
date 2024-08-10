@@ -1,0 +1,23 @@
+{
+  "name": "socket-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx tsc index.ts",
+    "start": "yarn build && node server.js",
+    "dev": "npx ts-node-dev ./server.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^22.1.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "net": "^1.0.2"
+  }
+}
